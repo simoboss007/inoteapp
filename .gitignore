@@ -1,0 +1,35 @@
+# Learn more https://docs.github.com/en/get-started/getting-started-with-git/ignoring-files
+
+# dependencies
+node_modules/
+.expo/
+dist/
+npm-debug.*
+*.jks
+*.p8
+*.p12
+*.key
+*.mobileprovision
+*.orig.*
+web-build/
+.DS_Store
+.env
+.vscode/
+.idea/
+*.log
+android/
+ios/
+tmp/
+.tmp/
+*.tmp
+.expo-shared/
+.history/
+.cache/
+coverage/
+*.swp
+*.swo
+*.swn
+*.bak
+*.zip
+*.tar.gz
+.eas/
