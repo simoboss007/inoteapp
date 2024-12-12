@@ -12,19 +12,26 @@
       "backgroundColor": "#ffffff"
     },
     "assetBundlePatterns": [
-      "assets/*"
+      "**/*"
     ],
     "android": {
       "adaptiveIcon": {
         "foregroundImage": "./assets/adaptive-icon.png",
         "backgroundColor": "#ffffff"
       },
-      "package": "com.inote.app"
+      "package": "com.inote.app",
+      "versionCode": 1,
+      "permissions": [
+        "CAMERA",
+        "READ_EXTERNAL_STORAGE",
+        "WRITE_EXTERNAL_STORAGE"
+      ]
     },
     "extra": {
       "eas": {
         "projectId": "1bb454a9-c60b-440e-81f4-2c6a05fae3d3"
       }
-    }
+    },
+    "owner": "simoboss12"
   }
 }

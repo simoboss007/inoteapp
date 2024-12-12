@@ -19,9 +19,15 @@
       }
     },
     "production": {
+      "node": "18.18.2",
       "android": {
         "buildType": "app-bundle",
+        "gradleCommand": ":app:bundleRelease",
+        "withoutCredentials": true,
         "image": "ubuntu-18.04-jdk-11-ndk-r19c"
+      },
+      "env": {
+        "ANDROID_HOME": "/opt/android/sdk"
       }
     }
   },
