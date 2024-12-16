@@ -1,11 +1,11 @@
 {
   "expo": {
     "name": "INote",
-    "slug": "inote",
+    "slug": "inoteapp",
     "version": "1.0.0",
     "orientation": "portrait",
     "icon": "./assets/icon.png",
-    "userInterfaceStyle": "automatic",
+    "userInterfaceStyle": "light",
     "splash": {
       "image": "./assets/splash.png",
       "resizeMode": "contain",
@@ -22,20 +22,13 @@
         "foregroundImage": "./assets/adaptive-icon.png",
         "backgroundColor": "#ffffff"
       },
-      "package": "com.simoboss007.inote",
-      "versionCode": 1
+      "package": "com.simoboss12.inote"
     },
-    "owner": "simoboss001",
-    "sdkVersion": "52.0.0",
-    "platforms": [
-      "ios",
-      "android",
-      "web"
-    ],
     "extra": {
       "eas": {
-        "projectId": "0c028ee7-201b-4e48-b8ff-c99e350da85f"
+        "projectId": "1c613a5d-0715-4496-b3d1-eac4ff0fc32a"
       }
-    }
+    },
+    "owner": "simoboss001"
   }
 }

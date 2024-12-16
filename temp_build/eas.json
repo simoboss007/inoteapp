@@ -1,0 +1,46 @@
+{
+  "cli": {
+    "version": ">=14.2.0",
+    "appVersionSource": "local"
+  },
+  "build": {
+    "development": {
+      "developmentClient": true,
+      "distribution": "internal",
+      "android": {
+        "buildType": "apk",
+        "gradleCommand": ":app:assembleDebug"
+      },
+      "env": {
+        "APP_ENV": "development",
+        "NODE_ENV": "development"
+      },
+      "environment": "development"
+    },
+    "preview": {
+      "distribution": "internal",
+      "android": {
+        "buildType": "apk",
+        "gradleCommand": ":app:assembleRelease"
+      },
+      "env": {
+        "APP_ENV": "preview",
+        "NODE_ENV": "production"
+      },
+      "environment": "preview"
+    },
+    "production": {
+      "distribution": "store",
+      "android": {
+        "buildType": "app-bundle",
+        "gradleCommand": ":app:bundleRelease"
+      },
+      "env": {
+        "APP_ENV": "production",
+        "NODE_ENV": "production",
+        "APP_VARIANT": "release"
+      },
+      "environment": "production"
+    }
+  }
+}
