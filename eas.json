@@ -1,6 +1,6 @@
 {
   "cli": {
-    "version": ">= 5.9.1",
+    "version": ">=14.2.0",
     "appVersionSource": "local"
   },
   "build": {
@@ -10,39 +10,34 @@
       "android": {
         "buildType": "apk",
         "gradleCommand": ":app:assembleDebug"
+      },
+      "env": {
+        "APP_ENV": "development",
+        "NODE_ENV": "development"
       }
     },
     "preview": {
       "distribution": "internal",
       "android": {
-        "buildType": "apk"
-      }
-    },
-    "production": {
-      "node": "18.18.2",
-      "android": {
-        "buildType": "app-bundle",
-        "gradleCommand": ":app:bundleRelease",
-        "withoutCredentials": true,
-        "image": "ubuntu-18.04-jdk-11-ndk-r19c"
+        "buildType": "apk",
+        "gradleCommand": ":app:assembleRelease"
       },
       "env": {
-        "ANDROID_HOME": "/opt/android/sdk"
-      }
-    }
-  },
-  "submit": {
-    "preview": {
-      "android": {
-        "track": "internal",
-        "releaseStatus": "draft"
+        "APP_ENV": "preview",
+        "NODE_ENV": "production"
       }
     },
     "production": {
+      "distribution": "store",
       "android": {
-        "serviceAccountKeyPath": "./pc-api-key.json",
-        "track": "internal"
-      }
+        "buildType": "app-bundle",
+        "gradleCommand": ":app:bundleRelease"
+      },
+      "env": {
+        "APP_ENV": "production",
+        "NODE_ENV": "production"
+      },
+      "autoIncrement": true
     }
   }
 }
