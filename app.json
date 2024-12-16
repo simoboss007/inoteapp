@@ -14,6 +14,9 @@
     "assetBundlePatterns": [
       "**/*"
     ],
+    "ios": {
+      "supportsTablet": true
+    },
     "android": {
       "adaptiveIcon": {
         "foregroundImage": "./assets/adaptive-icon.png",
@@ -22,6 +25,17 @@
       "package": "com.simoboss007.inote",
       "versionCode": 1
     },
-    "owner": "simoboss12"
+    "owner": "simoboss12",
+    "sdkVersion": "52.0.0",
+    "platforms": [
+      "ios",
+      "android",
+      "web"
+    ],
+    "extra": {
+      "eas": {
+        "projectId": "1c613a5d-0715-4496-b3d1-eac4ff0fc32a"
+      }
+    }
   }
 }
